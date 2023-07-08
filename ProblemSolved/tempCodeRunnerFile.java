@@ -1,3 +1,3 @@
-  int Average = (a+b+c)/(2);
-     System.out.println(Average);
-     
+import java.util.*;
+public class Printsumoddandeven {
+    public static void main (String args[]) {
