@@ -6,10 +6,10 @@ public class Palindrome {
       Scanner  sc = new Scanner(System.in);
         int n=sc.nextInt();
         int dec=0;
-        while(n>0){
+        while(n<0){
             dec=n%10; 
-            // System.out.print(dec);
-            dec=n/10;
+            System.out.print(dec);
+            n=dec+n/10;
            
         }
        
