@@ -34,7 +34,7 @@ public class Arrays {
         // }
         // System.out.println();
 
-        int numbers[] = { 1, 2, 6, 3, 5 };
+        int numbers[] = { 1, 2, 6, -77, 5 };
         System.out.println("Largest value is : " + getLargest(numbers));
         // System.out.println("Smallest value is :"+getLargest(numbers));
 
