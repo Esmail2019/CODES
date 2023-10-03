@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "q3",
+            "request": "launch",
+            "mainClass": "Nanodegree.q3",
+            "projectName": "Java_aafc4de"
+        },
+        {
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
