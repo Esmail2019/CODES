@@ -23,3 +23,6 @@ public static void main (String args[]) {
   printArr(arr);
   
 }
+
+private static void printArr(int[] arr) {
+}

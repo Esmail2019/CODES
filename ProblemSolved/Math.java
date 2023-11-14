@@ -12,3 +12,8 @@ public static void main (String args[]) {
 public static int max(int cs, int ms) {
     return 0;
 }
+
+public static int sqrt(int i) {
+    return 0;
+}
+}

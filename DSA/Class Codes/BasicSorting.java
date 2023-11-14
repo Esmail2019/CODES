@@ -1,10 +1,10 @@
 public class BasicSorting {
 
-    public static void bubbleSort(int arr[]) {
+    public static void bubbleSort(int[] arr) {
         for (int turn = 0; turn < arr.length - 1; turn++) {
             int swap = 0;
             for (int j = 0; j < arr.length - 1 - turn; j++) {
-                if (arr[j] > arr[j + 1]) {
+                if (arr[j] >arr[j + 1]) {
                     // swap
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
@@ -17,7 +17,7 @@ public class BasicSorting {
         }
     }
 
-    public static void selection_sort(int arr[]) {
+    public static void selection_sort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             int minPos = i;
             for (int j = i + 1; j < arr.length; j++) {
@@ -36,7 +36,7 @@ public class BasicSorting {
 
     }
 
-    public static void insertionSort(int ar[]) {
+    public static void insertionSort(int[] ar) {
         for (int i = 1; i < ar.length; i++) {
             int curr = i;
             int prev = i - 1;
@@ -53,12 +53,12 @@ public class BasicSorting {
 
     public static void countingSort(int arr[]) {
         int largest = Integer.MIN_VALUE;
-        for (int i = 0; i < arr.length; i++) {
-            largest = Math.max(largest, arr[i]);
+        for (int k : arr) {
+            largest = Math.max(largest, k);
         }
-        int count[] = new int[largest + 1];
-        for (int i = 0; i < arr.length; i++) {
-            count[arr[i]]++;
+        int[] count = new int[largest + 1];
+        for (int k : arr) {
+            count[k]++;
         }
 
         int j = 0;
@@ -72,16 +72,16 @@ public class BasicSorting {
 
     }
 
-    public static void printArr(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+    public static void printArr(int[] arr) {
+        for (int j : arr) {
+            System.out.print(j + " ");
         }
         System.out.println();
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
-        int arr[] = { 5, 4, 1, 3, 2 };
+        int[] arr = { 5, 4, 1, 3, 2 };
         countingSort(arr);
         // Arrays.sort(arr,0,3,Collections.reverseorder())
         printArr(arr);

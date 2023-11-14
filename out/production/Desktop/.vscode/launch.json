@@ -6,13 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "_twoDArrrays",
-            "request": "launch",
-            "mainClass": "_twoDArrrays",
-            "projectName": "Java_aafc4de"
-        },
-        {
-            "type": "java",
             "name": "q3",
             "request": "launch",
             "mainClass": "Nanodegree.q3",
